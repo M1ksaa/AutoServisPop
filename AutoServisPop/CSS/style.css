@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap');
+
+:root{
+    --DarkGray: rgb(29, 29, 33);
+    --DarkerGray: rgb(20, 20, 21);
+    --Gray:rgb(42, 42, 42);
+    --LightGray:rgb(179, 179, 179);
+    --GoldenYellow: rgb(224, 184, 52);
+    --GoldenYellowWOpacity: rgba(224, 184, 52, 0.3);
+    --GrayWOpacity:rgba(68, 68, 68,.75);
+    --MiniText:10px;
+    --MildText:20px;
+    --MidiText:25px;
+    --BigText:45px;
+    --XLText:75px;
+    --XXLText:100px;
+}
+
+body{
+    margin:0;
+    background-color: var(--DarkGray);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: var(--DarkGray);
+    padding: 10px 20px;
+    height: 50px;
+}
+
+.NavLinks{
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    padding: 20px;
+    text-decoration: none;
+}
+
+.activelink{
+    text-decoration: underline solid var(--GoldenYellow);
+}
+
+.NavLinks a{
+    font-size: var(--MidiText);
+
+    color: var(--GoldenYellow);
+}
+
+.banner{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            black   ,
+            var(--GoldenYellowWOpacity)
+            
+        ),
+        url('https://images.unsplash.com/photo-1625047509252-ab38fb5c7343?w=1600&q=80');
+
+    background-size: cover;
+    background-position: center;
+    border-bottom: 10px solid var(--GoldenYellow)
+}
+.bannerKontakt{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(
+            var(--DarkerGray),
+            var(--GoldenYellowWOpacity)
+        );
+    border-bottom: 10px solid var(--GoldenYellow)
+}
+
+.Stats{
+    display: flex;
+    min-height: 25vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background:linear-gradient(
+            var(--GoldenYellowWOpacity),
+            var(--DarkGray));
+    
+}
+
+.introduction h2{
+    text-align: center;
+    font-size: var(--XLText);
+    color: white;
+    text-shadow: 1px 1px black, 3px 3px var(--GoldenYellow);
+    line-height: 1;
+}
+.introduction h1{
+    text-align: center;
+    font-size: var(--XLText);
+    color: var(--GoldenYellow);
+    text-shadow:2px 2px rgb(72, 59, 4), 3px 3px rgb(150, 150, 150);
+    line-height: 1;
+}
+
+.introduction{
+    position: relative;
+    z-index: 1;
+    max-width: 350px;
+}
+
+.introduction p{
+    text-align: center;
+    color: var(--LightGray);
+    font-size: var(--MidiText);
+    text-shadow: 3px 3px var(--Gray);
+    line-height: 1;
+}
+
+.introduction .Stars{
+    text-align: center;
+    color: var(--GoldenYellow);
+    font-size: var(--MidiText);
+    text-shadow: 3px 3px var(--Gray);
+    line-height: 2;
+}
+
+.Perk{
+    justify-content: center;
+    text-align: center;
+}
+
+.number{
+    font-size: var(--BigText);
+    color: var(--GoldenYellow);
+}
+.description{
+    font-size: var(--MidiText);
+    color: var(--LightGray);
+    line-height: 1;
+}
+
+.Services{
+    display: flex;
+    min-height: 30vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background:var(--DarkGray);
+}
+
+@media (max-width: 830px) {
+    .Services{
+        flex-direction: column;
+        gap: 100px;
+    }
+    .Redosled{
+        flex-direction: column;
+        gap: 100px; 
+    }
+}
+@media (max-width: 1100px) {
+    .Services{
+        gap: 20px;
+    }
+    .Redosled{
+        gap: 20px; 
+    }    
+}
+
+
+.Usluga{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Gray);
+    border-radius: 10px;
+    width: 300px;
+    min-height: 300px;
+    max-height: 700px;
+    box-shadow: 5px 5px var(--GoldenYellowWOpacity);
+    
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(1.0);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+.Usluga:hover{
+   box-shadow: 5px 5px var(--GoldenYellow); 
+   animation: fadeIn .2s ease-in forwards;
+}
+.Usluga h2{
+    color: white;
+    font-size: var(--BigText);
+    line-height: 0.5;
+}
+
+
+.Usluga p{
+    text-align: center;
+    color: var(--LightGray);
+    font-size: var(--MildText);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+}
+
+.Usluga .Emoji{
+    line-height: 0.5;
+    font-size: var(--BigText);
+}
+
+.ServicesIntroduction{
+    margin-top: 100px;
+    display: flex;
+    min-height: 25vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background:var(--DarkGray);
+}
+.ServicesIntroduction div{
+    text-align: center;
+}
+.ServicesIntroduction h2{
+    color: var(--GoldenYellow);
+    font-size: var(--MidiText);
+}
+.ServicesIntroduction h1{
+    color: white;
+    font-size: var(--XLText);
+    line-height: 1;
+}
+
+.CallUs{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    min-height: 15vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background:var(--GoldenYellow);
+    font-size: var(--MidiText);
+    text-align: center;
+}
+
+.CallUs button{
+    border-radius: 10px;
+    background-color: black;
+    width: 400px;
+    max-width: 400px;
+    height: 50px;
+    max-height: 50px;
+    margin-bottom: 75px;
+}
+
+.CallUs button a{
+    font-size: var(--MildText);
+    color: var(--GoldenYellow);
+    text-decoration: none;
+}
+
+.Recenjzije{
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background:var(--DarkGray);
+    margin-bottom: 100px;
+}
+
+.Recenzija{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    background-color: var(--Gray);
+    width: 500px;
+    min-height: 300px;
+    max-height: 400px;
+    box-shadow: -5px 0px var(--GoldenYellow);
+}
+
+.Recenzija:hover{
+   animation: fadeIn .2s ease-in forwards;
+}
+
+.Recenzija h2{
+    color: white;
+    font-size: var(--MidiText);
+    line-height: 0.5;
+    margin-left: 10px;
+}
+
+
+.Recenzija p{
+    color: var(--LightGray);
+    font-size: var(--MildText);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-left: 10px;
+    
+}
+
+.Redosled{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+@media (max-width: 830px) {
+
+    .Redosled{
+        flex-direction: column;
+        gap: 100px; 
+    }
+    .Recenzija{
+        width: 350px;
+    }
+}
+@media (max-width: 1100px) {
+    .Redosled{
+        gap: 20px;
+    } 
+    .Recenzija{
+        width: 300px;
+    }   
+}
+
+footer{
+    background-color: var(--DarkerGray);
+    border-top: 10px solid var(--GoldenYellow);
+    padding: 40px 20px;
+    margin-top: auto;
+}
+.FooterInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.FooterInfo h1{
+    text-align: left;
+    font-size: var(--MidiText);
+    color: white;
+    line-height: 1;    
+}
+.FooterInfo p{
+    text-align: left;
+    color: var(--LightGray);
+    font-size: var(--mini);
+    line-height: 1;
+}
+.FooterInfo div{
+    margin-top: 100px;
+}
+
+.MiniNav{
+    text-align: center;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.MiniNav a{
+    color: var(--LightGray);
+    text-decoration: none;
+}
+.MiniNav a:hover{
+    color: white;
+    text-decoration: underline white ;
+}
+
+.RadnoVreme{
+    text-align: center;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.RadnoVreme h1{
+    margin-top: 70px;
+}
+
+@media (max-width: 830px) {
+
+    .FooterInfo{
+        flex-direction: column;
+        
+    }
+}
+.KontaktPasus{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+.Raspored{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 200px;
+    background-color: var(--DarkerGray);
+    width: 800px;
+    height: 40vh;
+    box-shadow: 0px 10px var(--GoldenYellow);
+    border-left: 4px solid var(--Gray);
+    border-right: 4px solid var(--Gray);
+    border-top: 4px solid var(--Gray);
+}
+
+
+.Slika{
+    width: 400px;
+    margin: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.Slika h1{
+    color: var(--GoldenYellow);
+    font-size: var(--MidiText);
+    text-align: center;
+}
+.Slika img{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    display: block;
+    border: 4px solid var(--Gray);
+}
+.KontaktInformacije{
+    color: white;
+    text-shadow: 2px 2px black;
+    align-items: center;
+    justify-content: center;
+}
+
+.KontaktInformacije h1{
+    margin-top: 75px;
+    color: var(--GoldenYellow);
+    font-size: var(--MidiText);
+    text-align: center;
+}
+
+
+@media (max-width: 830px) {
+
+    .Raspored{
+        height: 80vh;
+        flex-direction: column;
+        width: 95vw;
+        
+    }
+    .Slika img{
+        height: 100%;
+        width: 100%;
+    }
+    .Slika{
+        height: 100%;
+        height: 500px;
+        width: 80vw;
+    }
+    .KontaktInformacije{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .KontaktPasus{
+        margin-bottom:300px
+    }
+}
+.Raspored a{
+    color: white;
+}
+
+.Raspored a:hover{
+    color: var(--GoldenYellow);
+}
+
