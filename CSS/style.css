@@ -157,26 +157,6 @@ nav a{
     background:var(--DarkGray);
 }
 
-@media (max-width: 830px) {
-    .Services{
-        flex-direction: column;
-        gap: 100px;
-    }
-    .Redosled{
-        flex-direction: column;
-        gap: 100px; 
-    }
-}
-@media (max-width: 1100px) {
-    .Services{
-        gap: 20px;
-    }
-    .Redosled{
-        gap: 20px; 
-    }    
-}
-
-
 .Usluga{
     display: flex;
     flex-direction: column;
@@ -184,22 +164,12 @@ nav a{
     justify-content: center;
     background-color: var(--Gray);
     border-radius: 10px;
-    width: 300px;
-    min-height: 300px;
-    max-height: 700px;
+    width: 400px;
+    min-height: 400px;
+    max-height: 400px;
     box-shadow: 5px 5px var(--GoldenYellowWOpacity);
     
 }
-
-@keyframes fadeIn {
-  from {
-    transform: scale(1.0);
-  }
-  to {
-    transform: scale(1.05);
-  }
-}
-
 .Usluga:hover{
    box-shadow: 5px 5px var(--GoldenYellow); 
    animation: fadeIn .2s ease-in forwards;
@@ -207,7 +177,8 @@ nav a{
 .Usluga h2{
     color: white;
     font-size: var(--BigText);
-    line-height: 0.5;
+    line-height: 1;
+    text-align: center;
 }
 
 
@@ -221,9 +192,45 @@ nav a{
 }
 
 .Usluga .Emoji{
-    line-height: 0.5;
+    line-height: 1;
     font-size: var(--BigText);
 }
+
+@media (max-width: 1100px) {
+
+    
+    .Usluga{
+        width: 80vw;
+        flex-direction: column;
+    }
+    .Services{
+        flex-direction: column;
+        gap: 100px;
+        width: 100vw;
+    }
+    .Redosled{
+        flex-direction: column;
+        gap: 500px; 
+    }
+}
+@media (max-width: 1700px) {
+    .Redosled{
+        gap: 100px; 
+    }    
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    transform: scale(1.0);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+
 
 .ServicesIntroduction{
     margin-top: 100px;
@@ -423,7 +430,8 @@ footer{
     margin: 200px;
     background-color: var(--DarkerGray);
     width: 800px;
-    height: 40vh;
+    height: 50vh;
+    max-height: 100vh;
     box-shadow: 0px 10px var(--GoldenYellow);
     border-left: 4px solid var(--Gray);
     border-right: 4px solid var(--Gray);
@@ -468,21 +476,22 @@ footer{
 }
 
 
-@media (max-width: 830px) {
+@media (max-width: 700px) {
 
     .Raspored{
-        height: 80vh;
+        height: 100vh;
         flex-direction: column;
         width: 95vw;
-        
+        margin-top: 30px;
     }
     .Slika img{
         height: 100%;
         width: 100%;
+        
     }
     .Slika{
         height: 100%;
-        height: 500px;
+        height: 800px;
         width: 80vw;
     }
     .KontaktInformacije{
@@ -493,6 +502,7 @@ footer{
         margin-bottom:300px
     }
 }
+
 .Raspored a{
     color: white;
 }
