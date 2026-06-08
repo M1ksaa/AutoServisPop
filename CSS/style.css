@@ -64,7 +64,6 @@ nav a{
             
         ),
         url('https://images.unsplash.com/photo-1625047509252-ab38fb5c7343?w=1600&q=80');
-
     background-size: cover;
     background-position: center;
     border-bottom: 10px solid var(--GoldenYellow)
@@ -345,6 +344,10 @@ nav a{
     }
     .Recenzija{
         width: 350px;
+    }
+
+    .CallUs button{
+        width: 300px;
     }
 }
 @media (max-width: 1100px) {
