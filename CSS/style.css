@@ -30,6 +30,10 @@ nav{
     height: 50px;
 }
 
+nav p{
+    color: var(--GoldenYellow);
+}
+
 .NavLinks{
     margin-left: auto;
     display: flex;
@@ -98,14 +102,14 @@ nav a{
     text-align: center;
     font-size: var(--XLText);
     color: white;
-    text-shadow: 1px 1px black, 3px 3px var(--GoldenYellow);
+    text-shadow: 3px 3px black;
     line-height: 1;
 }
 .introduction h1{
     text-align: center;
     font-size: var(--XLText);
     color: var(--GoldenYellow);
-    text-shadow:2px 2px rgb(72, 59, 4), 3px 3px rgb(150, 150, 150);
+    text-shadow: 3px 3px black;
     line-height: 1;
 }
 
@@ -119,7 +123,7 @@ nav a{
     text-align: center;
     color: var(--LightGray);
     font-size: var(--MidiText);
-    text-shadow: 3px 3px var(--Gray);
+    text-shadow: 3px 3px black;
     line-height: 1;
 }
 
@@ -457,7 +461,7 @@ footer{
     font-size: var(--MidiText);
     text-align: center;
 }
-.Slika img{
+.Slika iframe{
     width: 100%;
     height: 75%;
     object-fit: cover;
@@ -469,12 +473,13 @@ footer{
     text-shadow: 2px 2px black;
     align-items: center;
     justify-content: center;
+    font-size: var(--MidiText);
 }
 
 .KontaktInformacije h1{
-    margin-top: 75px;
+    margin-top: 20px;
     color: var(--GoldenYellow);
-    font-size: var(--MidiText);
+    
     text-align: center;
 }
 
@@ -513,4 +518,5 @@ footer{
 .Raspored a:hover{
     color: var(--GoldenYellow);
 }
+
 
