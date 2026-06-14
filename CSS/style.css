@@ -353,6 +353,9 @@ nav a{
     .CallUs button{
         width: 300px;
     }
+    nav a{
+    padding: 0px;
+    }
 }
 @media (max-width: 1100px) {
     .Redosled{
@@ -509,6 +512,7 @@ footer{
     .KontaktPasus{
         margin-bottom:300px
     }
+
 }
 
 .Raspored a{
