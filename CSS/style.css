@@ -5,8 +5,8 @@
     --DarkerGray: rgb(20, 20, 21);
     --Gray:rgb(42, 42, 42);
     --LightGray:rgb(179, 179, 179);
-    --GoldenYellow: rgb(224, 184, 52);
-    --GoldenYellowWOpacity: rgba(224, 184, 52, 0.3);
+    --GoldenYellow: rgb(202, 118, 34);
+    --GoldenYellowWOpacity: rgba(202, 118, 34, 0.3);
     --GrayWOpacity:rgba(68, 68, 68,.75);
     --MiniText:10px;
     --MildText:20px;
@@ -67,7 +67,7 @@ nav a{
             var(--GoldenYellowWOpacity)
             
         ),
-        url('https://images.unsplash.com/photo-1625047509252-ab38fb5c7343?w=1600&q=80');
+        url('../Images/CarPhotoElenor.jpeg');
     background-size: cover;
     background-position: center;
     border-bottom: 10px solid var(--GoldenYellow)
@@ -422,10 +422,15 @@ footer{
 }
 
 @media (max-width: 830px) {
-
+    .FooterInfo div{
+    margin-top: 20px;
+}
+    .RadnoVreme h1{
+    margin-top: 20px;
+    }
     .FooterInfo{
         flex-direction: column;
-        
+        gap: 20px;
     }
 }
 .KontaktPasus{
